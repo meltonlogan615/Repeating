@@ -25,6 +25,11 @@
 		320E3DC129ACCC6800E9B3F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		320E3DC329ACCC6800E9B3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		320E3DD129ACCD3300E9B3F6 /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
+		320E3DD229ACE74B00E9B3F6 /* DataModel+Overview.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DataModel+Overview.md"; sourceTree = "<group>"; };
+		320E3DD329ACF1FC00E9B3F6 /* DataModel+Item.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DataModel+Item.md"; sourceTree = "<group>"; };
+		320E3DD429ACF29B00E9B3F6 /* DataModel+List.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DataModel+List.md"; sourceTree = "<group>"; };
+		320E3DD529ACF38600E9B3F6 /* Notes+Resources.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Notes+Resources.md"; sourceTree = "<group>"; };
+		320E3DD929ACF95200E9B3F6 /* DataModel+Heirarchy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DataModel+Heirarchy.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				320E3DD129ACCD3300E9B3F6 /* Notes.md */,
+				320E3DD529ACF38600E9B3F6 /* Notes+Resources.md */,
 				320E3DCF29ACCCCF00E9B3F6 /* Delegates */,
 				320E3DCE29ACCCAA00E9B3F6 /* SupportFiles */,
 				320E3DCD29ACCC9D00E9B3F6 /* Extensions */,
@@ -87,6 +93,7 @@
 		320E3DCB29ACCC8C00E9B3F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				320E3DD629ACF42B00E9B3F6 /* Elements */,
 				320E3DD029ACCCDD00E9B3F6 /* Storyboards */,
 			);
 			path = Views;
@@ -95,6 +102,7 @@
 		320E3DCC29ACCC9400E9B3F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				320E3DD829ACF46700E9B3F6 /* ModelNotes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,6 +139,32 @@
 				320E3DC029ACCC6800E9B3F6 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		320E3DD629ACF42B00E9B3F6 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				320E3DD729ACF43300E9B3F6 /* Inputs */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		320E3DD729ACF43300E9B3F6 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		320E3DD829ACF46700E9B3F6 /* ModelNotes */ = {
+			isa = PBXGroup;
+			children = (
+				320E3DD229ACE74B00E9B3F6 /* DataModel+Overview.md */,
+				320E3DD329ACF1FC00E9B3F6 /* DataModel+Item.md */,
+				320E3DD429ACF29B00E9B3F6 /* DataModel+List.md */,
+				320E3DD929ACF95200E9B3F6 /* DataModel+Heirarchy.md */,
+			);
+			path = ModelNotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +395,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +424,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

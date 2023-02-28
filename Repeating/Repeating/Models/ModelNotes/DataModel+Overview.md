@@ -26,7 +26,6 @@
   - previous purchased?: Bool
   - last purchased: Date  
   - all purchases: [Date]
-  - image?: UIImage
   - comments: String
   - Computed Properties:
     - Total Units Purchased

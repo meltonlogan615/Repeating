@@ -15,6 +15,7 @@
 		320E3DC229ACCC6800E9B3F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320E3DC029ACCC6800E9B3F6 /* LaunchScreen.storyboard */; };
 		320E3DDC29AD094C00E9B3F6 /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320E3DDB29AD094C00E9B3F6 /* StorageProvider.swift */; };
 		3282911829AD91CD00843FC2 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3282911729AD91CD00843FC2 /* Keys.swift */; };
+		3282911C29AD943500843FC2 /* Repeating.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3282911A29AD943500843FC2 /* Repeating.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		320E3DDB29AD094C00E9B3F6 /* StorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
 		3282911529AD8FB800843FC2 /* G-Taxonomy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "G-Taxonomy.md"; sourceTree = "<group>"; };
 		3282911729AD91CD00843FC2 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		3282911B29AD943500843FC2 /* Repeating.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Repeating.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +69,10 @@
 		320E3DB429ACCC6800E9B3F6 /* Repeating */ = {
 			isa = PBXGroup;
 			children = (
+				3282911929AD93D300843FC2 /* GenNotes */,
 				3282911629AD91B900843FC2 /* Networking */,
-				320E3DD129ACCD3300E9B3F6 /* Notes.md */,
-				320E3DD529ACF38600E9B3F6 /* Notes+Resources.md */,
-				3282911529AD8FB800843FC2 /* G-Taxonomy.md */,
-				320E3DCF29ACCCCF00E9B3F6 /* Delegates */,
 				320E3DCE29ACCCAA00E9B3F6 /* SupportFiles */,
+				320E3DCF29ACCCCF00E9B3F6 /* Delegates */,
 				320E3DCD29ACCC9D00E9B3F6 /* Extensions */,
 				320E3DCC29ACCC9400E9B3F6 /* Models */,
 				320E3DCB29ACCC8C00E9B3F6 /* Views */,
@@ -179,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				320E3DDB29AD094C00E9B3F6 /* StorageProvider.swift */,
+				3282911A29AD943500843FC2 /* Repeating.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -189,6 +190,16 @@
 				3282911729AD91CD00843FC2 /* Keys.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		3282911929AD93D300843FC2 /* GenNotes */ = {
+			isa = PBXGroup;
+			children = (
+				3282911529AD8FB800843FC2 /* G-Taxonomy.md */,
+				320E3DD529ACF38600E9B3F6 /* Notes+Resources.md */,
+				320E3DD129ACCD3300E9B3F6 /* Notes.md */,
+			);
+			path = GenNotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				320E3DDC29AD094C00E9B3F6 /* StorageProvider.swift in Sources */,
+				3282911C29AD943500843FC2 /* Repeating.xcdatamodeld in Sources */,
 				320E3DBA29ACCC6800E9B3F6 /* ViewController.swift in Sources */,
 				320E3DB629ACCC6800E9B3F6 /* AppDelegate.swift in Sources */,
 				320E3DB829ACCC6800E9B3F6 /* SceneDelegate.swift in Sources */,
@@ -486,6 +498,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3282911A29AD943500843FC2 /* Repeating.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3282911B29AD943500843FC2 /* Repeating.xcdatamodel */,
+			);
+			currentVersion = 3282911B29AD943500843FC2 /* Repeating.xcdatamodel */;
+			path = Repeating.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 320E3DAA29ACCC6800E9B3F6 /* Project object */;
 }

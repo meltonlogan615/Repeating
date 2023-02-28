@@ -19,7 +19,7 @@
   - id: UUID
   - name: String
   - quantity: Double
-  - unit of measure: String - Custom Options
+  - unit of measure (unitType): String - Custom Options
   - cost: Double
   - preferred store: Store
   - additional store: [Store] (cannot include preferred store)

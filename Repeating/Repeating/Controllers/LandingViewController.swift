@@ -22,7 +22,6 @@ extension LandingViewController {
   private func style() {
     collection = UICollectionView(frame: view.frame, collectionViewLayout: createCompositionalLayout())
     collection.translatesAutoresizingMaskIntoConstraints = false
-    collection.isScrollEnabled = false
     collection.register(LandingCell.self, forCellWithReuseIdentifier: "cell")
     collection.dataSource = self
     collection.delegate = self
@@ -45,14 +44,24 @@ extension LandingViewController: UICollectionViewDataSource {
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    guard let cell = collection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? LandingCell else {
+    return configureCell(at: indexPath)
+  }
+}
+
+extension LandingViewController {
+  func configureCell(at indexPath: IndexPath) -> UICollectionViewCell {
+    guard let cell = collection.dequeueReusableCell(withReuseIdentifier: "cell",
+                                                    for: indexPath) as? LandingCell else {
       return collection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
     }
-    cell.layer.borderColor = UIColor.black.cgColor
-    cell.layer.borderWidth = 2
-    cell.cellImage.image = UIImage(systemName: "house")
+
+    cell.layer.borderColor = UIColor.secondarySystemFill.cgColor
+    cell.layer.borderWidth = 0.5
+    cell.initialLabel.text = "F"
     cell.titleLabel.text = "Fuckery"
+    cell.storeLabel.text = "Poop"
     cell.itemCountLabel.text = "16"
+    cell.valueLabel.text = "$3.50"
     return cell
   }
 }
@@ -79,7 +88,7 @@ extension LandingViewController {
                                            heightDimension: .fractionalHeight(1))
 
     let sectionSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
-                                             heightDimension: .fractionalHeight(1/8))
+                                             heightDimension: .estimated(126))
 
     let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                heightDimension: .fractionalHeight(1))
@@ -93,6 +102,5 @@ extension LandingViewController {
 
     let section = NSCollectionLayoutSection(group: sectionAssembly)
     return section
-
   }
 }

@@ -10,13 +10,14 @@ import Foundation
 
 class StorageProvider {
   let persistentContainer: NSPersistentContainer
-  
+
   init(persistentContainer: NSPersistentContainer) {
     self.persistentContainer = NSPersistentContainer(name: "Repeating")
     persistentContainer.loadPersistentStores { description, error in
       if let error = error {
         fatalError("Yer container is janked, \(error)")
       }
+      print(description)
     }
   }
 }
@@ -55,7 +56,7 @@ extension StorageProvider {
 extension StorageProvider {
   func deleteItem(_ item: Item) {
     persistentContainer.viewContext.delete(item)
-    
+
     do {
       try persistentContainer.viewContext.save()
     } catch {
